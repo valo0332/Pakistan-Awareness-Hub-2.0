@@ -1,0 +1,325 @@
+import type { Disaster } from '@/types'
+
+export const disasters: Disaster[] = [
+  {
+    id: 'flood',
+    name: 'Flood',
+    shortName: 'Flood',
+    icon: 'Waves',
+    color: '#0ea5e9',
+    description:
+      'Floods are among the most frequent and destructive natural disasters in Pakistan, especially during the monsoon season. Rivers can overflow, urban drainage can fail, and flash floods can strike with little warning.',
+    severity: 'high',
+    seasons: ['Monsoon (Jun-Sep)', 'Spring melt (Mar-May)'],
+    regions: ['Sindh', 'Punjab', 'KPK', 'Balochistan', 'Gilgit-Baltistan'],
+    phases: {
+      before: [
+        'Know your area\'s flood risk and nearest high ground.',
+        'Assemble an emergency kit with documents in waterproof bags.',
+        'Keep battery-operated radios and charged power banks.',
+        'Identify evacuation routes and a family meeting point.',
+        'Elevate electrical appliances and valuables where possible.',
+      ],
+      during: [
+        'Move immediately to higher ground if water levels rise.',
+        'Never walk or drive through floodwater — even shallow water can sweep you away.',
+        'Turn off electricity, gas, and water at the mains if safe.',
+        'Avoid contact with floodwater; it may be contaminated.',
+        'Follow instructions from NDMA and local authorities.',
+      ],
+      after: [
+        'Wait for official clearance before returning home.',
+        'Check for structural damage before entering buildings.',
+        'Boil or purify drinking water until supply is confirmed safe.',
+        'Photograph damage for insurance and relief claims.',
+        'Watch for snakes and debris in standing water.',
+      ],
+    },
+    checklist: [
+      'Drinking water (4 litres per person per day)',
+      'Non-perishable food for 3-5 days',
+      'First aid kit and essential medicines',
+      'Waterproof copies of CNIC and property documents',
+      'Torch, batteries, and power bank',
+      'Warm clothing and rain gear',
+    ],
+    kit: ['Life jackets', 'Rope', 'Whistle', 'Waterproof bags', 'Cash in small notes'],
+    timeline: [
+      {
+        phase: 'Preparedness',
+        timeframe: 'Year-round',
+        actions: ['Learn local flood history', 'Prepare go-bag', 'Clear drains near home'],
+      },
+      {
+        phase: 'Warning',
+        timeframe: 'Hours before',
+        actions: ['Monitor NDMA alerts', 'Charge devices', 'Move valuables up'],
+      },
+      {
+        phase: 'Response',
+        timeframe: 'During flood',
+        actions: ['Evacuate if advised', 'Avoid floodwater', 'Stay connected'],
+      },
+      {
+        phase: 'Recovery',
+        timeframe: 'Days to weeks',
+        actions: ['Return when cleared', 'Sanitize home', 'Document damage'],
+      },
+    ],
+  },
+  {
+    id: 'earthquake',
+    name: 'Earthquake',
+    shortName: 'Earthquake',
+    icon: 'Activity',
+    color: '#f59e0b',
+    description:
+      'Pakistan lies in a seismically active zone, making earthquakes a real risk particularly in northern regions. Quakes strike without warning, so preparedness and the right response can save lives.',
+    severity: 'high',
+    seasons: ['Any time of year'],
+    regions: ['KPK', 'Gilgit-Baltistan', 'AJK', 'Balochistan', 'Northern Punjab'],
+    phases: {
+      before: [
+        'Identify safe spots under sturdy furniture in each room.',
+        'Secure heavy furniture and wall hangings to prevent falls.',
+        'Practice "Drop, Cover, Hold On" with your family.',
+        'Keep an emergency kit near an exit.',
+        'Know how to shut off utilities.',
+      ],
+      during: [
+        'Drop to the ground, take cover under a sturdy desk, and hold on.',
+        'Stay away from windows, mirrors, and exterior walls.',
+        'If outdoors, move to an open area away from buildings and power lines.',
+        'If driving, pull over safely and stay inside the vehicle.',
+        'Do not use elevators.',
+      ],
+      after: [
+        'Check yourself and others for injuries.',
+        'Expect aftershocks — stay alert.',
+        'Inspect your home for structural damage and gas leaks.',
+        'Use stairs, not elevators, to evacuate.',
+        'Listen to official updates before re-entering buildings.',
+      ],
+    },
+    checklist: [
+      'Sturdy shoes near the bed',
+      'First aid kit',
+      'Whistle to signal for help',
+      'Dust masks and goggles',
+      'Cash and copies of ID',
+      'Phone charger and power bank',
+    ],
+    kit: ['Helmet or hard hat', 'Heavy-duty gloves', 'Crowbar', 'Tarp', 'Duct tape'],
+    timeline: [
+      {
+        phase: 'Preparedness',
+        timeframe: 'Year-round',
+        actions: ['Bolt heavy furniture', 'Identify safe spots', 'Practice drills'],
+      },
+      {
+        phase: 'Immediate',
+        timeframe: '0-60 seconds',
+        actions: ['Drop, Cover, Hold On', 'Stay away from glass'],
+      },
+      {
+        phase: 'Response',
+        timeframe: 'Minutes after',
+        actions: ['Check for injuries', 'Evacuate if unsafe', 'Shut off gas if leaking'],
+      },
+      {
+        phase: 'Recovery',
+        timeframe: 'Hours to days',
+        actions: ['Avoid damaged buildings', 'Monitor alerts', 'Help neighbours'],
+      },
+    ],
+  },
+  {
+    id: 'fire',
+    name: 'Fire',
+    shortName: 'Fire',
+    icon: 'Flame',
+    color: '#dc2626',
+    description:
+      'Urban and wildfire incidents increase during dry seasons. Faulty wiring, gas leaks, and careless cooking are common causes. Knowing how to prevent and respond to fires is essential for every household.',
+    severity: 'high',
+    seasons: ['Dry season (Oct-Apr)', 'Heatwave months'],
+    regions: ['Nationwide', 'Forest areas', 'Dense urban settlements'],
+    phases: {
+      before: [
+        'Install smoke detectors and test them monthly.',
+        'Keep fire extinguishers in the kitchen and near exits.',
+        'Plan at least two escape routes from every room.',
+        'Store flammable materials safely and away from heat.',
+        'Have your electrical wiring inspected regularly.',
+      ],
+      during: [
+        'Get out immediately — do not stop for belongings.',
+        'Stay low to avoid smoke inhalation.',
+        'Feel doors with the back of your hand before opening.',
+        'Call 16 (Rescue) once you are safely outside.',
+        'If clothes catch fire: Stop, Drop, and Roll.',
+      ],
+      after: [
+        'Do not re-enter until the fire department declares it safe.',
+        'Ventilate the area once cleared.',
+        'Document damage for insurance.',
+        'Dispose of contaminated food and medicines.',
+        'Arrange temporary accommodation if needed.',
+      ],
+    },
+    checklist: [
+      'Fire extinguisher (checked annually)',
+      'Smoke detectors with fresh batteries',
+      'Escape ladder for upper floors',
+      'Emergency contact list',
+      'Fire blanket in kitchen',
+    ],
+    kit: ['Fire extinguisher', 'Fire blanket', 'Dust mask', 'First aid burn kit', 'Whistle'],
+    timeline: [
+      {
+        phase: 'Prevention',
+        timeframe: 'Daily',
+        actions: ['Check wiring', 'Test smoke alarms', 'Clear exits'],
+      },
+      {
+        phase: 'Detection',
+        timeframe: 'Seconds',
+        actions: ['Alarm sounds', 'Alert everyone', 'Call rescue'],
+      },
+      {
+        phase: 'Evacuation',
+        timeframe: '1-3 minutes',
+        actions: ['Use planned routes', 'Stay low', 'Close doors behind you'],
+      },
+      {
+        phase: 'Recovery',
+        timeframe: 'Days to weeks',
+        actions: ['Professional assessment', 'Cleanup', 'Insurance claim'],
+      },
+    ],
+  },
+  {
+    id: 'heatwave',
+    name: 'Heatwave',
+    shortName: 'Heatwave',
+    icon: 'Sun',
+    color: '#ea580c',
+    description:
+      'Extreme heat events have become increasingly common in Pakistani cities, with temperatures frequently exceeding 45°C. Heatwaves can cause dehydration, heatstroke, and death, especially among the elderly and outdoor workers.',
+    severity: 'medium',
+    seasons: ['Summer (May-Aug)'],
+    regions: ['Sindh', 'South Punjab', 'Balochistan', 'Karachi'],
+    phases: {
+      before: [
+        'Stock up on oral rehydration salts (ORS) and water.',
+        'Install shades or curtains on sun-facing windows.',
+        'Identify the coolest room in your home.',
+        'Plan indoor activities during peak heat hours.',
+      ],
+      during: [
+        'Drink water frequently, even if not thirsty.',
+        'Stay indoors between 11am and 4pm.',
+        'Wear loose, light-coloured clothing and a hat outdoors.',
+        'Check on elderly neighbours and young children.',
+        'Use wet cloths to cool down if overheating.',
+      ],
+      after: [
+        'Continue hydration as the body recovers.',
+        'Seek medical help for persistent dizziness or vomiting.',
+        'Allow the body to cool gradually — avoid sudden cold exposure.',
+        'Rest and avoid strenuous activity for a day.',
+      ],
+    },
+    checklist: [
+      'Plenty of drinking water',
+      'ORS sachets',
+      'Light cotton clothing',
+      'Sun hat and sunglasses',
+      'Wet towels and a spray bottle',
+    ],
+    kit: ['ORS packets', 'Water bottles', 'Cooling towel', 'Umbrella for shade', 'Electrolyte drinks'],
+    timeline: [
+      {
+        phase: 'Preparedness',
+        timeframe: 'Pre-summer',
+        actions: ['Buy ORS', 'Service fans/AC', 'Plan cool spaces'],
+      },
+      {
+        phase: 'Alert',
+        timeframe: 'During heatwave',
+        actions: ['Stay hydrated', 'Avoid midday sun', 'Check on vulnerable'],
+      },
+      {
+        phase: 'Peak',
+        timeframe: '11am-4pm',
+        actions: ['Stay indoors', 'Use cooling methods', 'Limit exertion'],
+      },
+      {
+        phase: 'Recovery',
+        timeframe: 'Post-heatwave',
+        actions: ['Rehydrate', 'Rest', 'Seek care if symptoms persist'],
+      },
+    ],
+  },
+  {
+    id: 'landslide',
+    name: 'Landslide',
+    shortName: 'Landslide',
+    icon: 'Mountain',
+    color: '#7c3aed',
+    description:
+      'Landslides occur in mountainous regions, particularly during heavy rainfall and after earthquakes. They can block roads, bury homes, and cut off communities with little warning.',
+    severity: 'medium',
+    seasons: ['Monsoon (Jul-Sep)', 'Post-earthquake'],
+    regions: ['Gilgit-Baltistan', 'AJK', 'KPK', 'Murree-Galyat'],
+    phases: {
+      before: [
+        'Learn whether your area is landslide-prone.',
+        'Watch for warning signs: cracks in ground, tilting trees, new springs.',
+        'Plan evacuation to a safe area away from slopes.',
+        'Avoid building near steep slopes or drainage channels.',
+      ],
+      during: [
+        'Move away from the path of the landslide quickly.',
+        'If you cannot escape, curl into a tight ball and protect your head.',
+        'Avoid river valleys and low-lying areas.',
+        'Listen for unusual sounds like rumbling or cracking.',
+      ],
+      after: [
+        'Stay away from the slide area — more may follow.',
+        'Report blocked roads to authorities.',
+        'Check for injured or trapped people without entering unstable ground.',
+        'Wait for official clearance before returning.',
+      ],
+    },
+    checklist: [
+      'Emergency kit ready to grab',
+      'Map of safe routes away from slopes',
+      'Battery radio for alerts',
+      'Sturdy boots and rain gear',
+    ],
+    kit: ['Helmet', 'Rope', 'Torch', 'First aid kit', 'Whistle'],
+    timeline: [
+      {
+        phase: 'Monitoring',
+        timeframe: 'Rainy season',
+        actions: ['Watch for ground cracks', 'Monitor alerts', 'Keep routes clear'],
+      },
+      {
+        phase: 'Warning',
+        timeframe: 'Minutes before',
+        actions: ['Evacuate slopes', 'Move to high, stable ground'],
+      },
+      {
+        phase: 'Event',
+        timeframe: 'During slide',
+        actions: ['Move fast', 'Protect head', 'Avoid valleys'],
+      },
+      {
+        phase: 'Recovery',
+        timeframe: 'After clearance',
+        actions: ['Stay clear of site', 'Report hazards', 'Support rescue'],
+      },
+    ],
+  },
+]
