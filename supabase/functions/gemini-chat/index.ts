@@ -18,7 +18,7 @@ const SYSTEM_INSTRUCTION =
   "Do not claim to be an emergency service or government authority.\n\n" +
   "If a question is outside the project's safety and awareness scope, politely explain that you are designed primarily for Pakistan public safety and awareness.";
 
-const GEMINI_MODEL = "gemini-3.5-flash";
+const GEMINI_MODEL = "gemini-3.5-flash-lite";
 const GEMINI_ENDPOINT = (model: string) =>
   `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
@@ -75,8 +75,6 @@ Deno.serve(async (req: Request) => {
       system_instruction: { parts: [{ text: SYSTEM_INSTRUCTION }] },
       contents,
       generationConfig: {
-        temperature: 0.4,
-        topP: 0.95,
         maxOutputTokens: 1024,
       },
     };
